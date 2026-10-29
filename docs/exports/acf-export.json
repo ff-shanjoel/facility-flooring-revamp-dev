@@ -1,0 +1,596 @@
+[
+    {
+        "key": "group_ff_product_specifications",
+        "title": "Product Specifications",
+        "fields": [
+            {
+                "key": "field_ff_reference",
+                "label": "Product reference",
+                "name": "ff_reference",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "tabs": "all",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "delay": 1,
+                "default_value": ""
+            },
+            {
+                "key": "field_ff_usage",
+                "label": "Usage",
+                "name": "ff_usage",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "tabs": "all",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "delay": 1,
+                "default_value": ""
+            },
+            {
+                "key": "field_ff_dimensions",
+                "label": "Dimensions",
+                "name": "ff_dimensions",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "tabs": "all",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "delay": 1,
+                "default_value": ""
+            },
+            {
+                "key": "field_ff_material",
+                "label": "Material",
+                "name": "ff_material",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "tabs": "all",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "delay": 1,
+                "default_value": ""
+            },
+            {
+                "key": "field_ff_installation",
+                "label": "Installation",
+                "name": "ff_installation",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "tabs": "all",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "delay": 1,
+                "default_value": ""
+            },
+            {
+                "key": "field_ff_performance",
+                "label": "Performance",
+                "name": "ff_performance",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "tabs": "all",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "delay": 1,
+                "default_value": ""
+            },
+            {
+                "key": "field_ff_colours",
+                "label": "Colours",
+                "name": "ff_colours",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "tabs": "all",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "delay": 1,
+                "default_value": ""
+            },
+            {
+                "key": "field_ff_accessories",
+                "label": "Accessories",
+                "name": "ff_accessories",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "tabs": "all",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "delay": 1,
+                "default_value": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "product"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": true,
+        "description": "Shown as the specification table on product detail pages. Leave a field empty to hide it.",
+        "show_in_rest": 1,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
+        "key": "group_ff_related_products",
+        "title": "Related Products",
+        "fields": [
+            {
+                "key": "field_ff_related",
+                "label": "Related products",
+                "name": "ff_related",
+                "aria-label": "",
+                "type": "relationship",
+                "instructions": "Products shown as cards below the content. Child products of a range are listed automatically, so only add extras here.",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "product"
+                ],
+                "filters": [
+                    "search",
+                    "taxonomy"
+                ],
+                "return_format": "id",
+                "taxonomy": [],
+                "min": 0,
+                "max": 0,
+                "elements": [],
+                "bidirectional_target": []
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "product"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "services"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "solutions"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": true,
+        "description": "",
+        "show_in_rest": 1,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
+        "key": "post_type_ff_our_work",
+        "title": "Our Work",
+        "menu_order": 0,
+        "active": true,
+        "post_type": "our_work",
+        "advanced_configuration": true,
+        "import_source": "",
+        "import_date": "",
+        "allow_ai_access": false,
+        "ai_description": "",
+        "labels": {
+            "name": "Our Work",
+            "singular_name": "Project",
+            "menu_name": "Our Work"
+        },
+        "description": "",
+        "public": true,
+        "hierarchical": false,
+        "exclude_from_search": false,
+        "publicly_queryable": true,
+        "show_ui": true,
+        "show_in_menu": true,
+        "admin_menu_parent": "",
+        "show_in_admin_bar": true,
+        "show_in_nav_menus": true,
+        "show_in_rest": true,
+        "rest_base": "",
+        "rest_namespace": "wp/v2",
+        "rest_controller_class": "WP_REST_Posts_Controller",
+        "menu_position": 21,
+        "menu_icon": {
+            "type": "dashicons",
+            "value": "dashicons-portfolio"
+        },
+        "rename_capabilities": false,
+        "singular_capability_name": "post",
+        "plural_capability_name": "posts",
+        "supports": [
+            "title",
+            "editor",
+            "thumbnail",
+            "excerpt",
+            "custom-fields",
+            "revisions"
+        ],
+        "taxonomies": [
+            "category",
+            "post_tag"
+        ],
+        "has_archive": false,
+        "has_archive_slug": "",
+        "rewrite": {
+            "permalink_rewrite": "post_type_key",
+            "slug": "",
+            "with_front": false,
+            "feeds": false,
+            "pages": true
+        },
+        "query_var": "post_type_key",
+        "query_var_name": "",
+        "can_export": true,
+        "delete_with_user": false,
+        "register_meta_box_cb": "",
+        "enter_title_here": ""
+    },
+    {
+        "key": "post_type_ff_product",
+        "title": "Products",
+        "menu_order": 0,
+        "active": true,
+        "post_type": "product",
+        "advanced_configuration": true,
+        "import_source": "",
+        "import_date": "",
+        "allow_ai_access": false,
+        "ai_description": "",
+        "labels": {
+            "name": "Products",
+            "singular_name": "Product",
+            "menu_name": "Products"
+        },
+        "description": "",
+        "public": true,
+        "hierarchical": true,
+        "exclude_from_search": false,
+        "publicly_queryable": true,
+        "show_ui": true,
+        "show_in_menu": true,
+        "admin_menu_parent": "",
+        "show_in_admin_bar": true,
+        "show_in_nav_menus": true,
+        "show_in_rest": true,
+        "rest_base": "",
+        "rest_namespace": "wp/v2",
+        "rest_controller_class": "WP_REST_Posts_Controller",
+        "menu_position": 21,
+        "menu_icon": {
+            "type": "dashicons",
+            "value": "dashicons-screenoptions"
+        },
+        "rename_capabilities": false,
+        "singular_capability_name": "post",
+        "plural_capability_name": "posts",
+        "supports": [
+            "title",
+            "editor",
+            "thumbnail",
+            "excerpt",
+            "page-attributes",
+            "custom-fields",
+            "revisions"
+        ],
+        "taxonomies": [
+            "category",
+            "post_tag",
+            "product_type"
+        ],
+        "has_archive": true,
+        "has_archive_slug": "product",
+        "rewrite": {
+            "permalink_rewrite": "post_type_key",
+            "slug": "",
+            "with_front": false,
+            "feeds": false,
+            "pages": true
+        },
+        "query_var": "post_type_key",
+        "query_var_name": "",
+        "can_export": true,
+        "delete_with_user": false,
+        "register_meta_box_cb": "",
+        "enter_title_here": ""
+    },
+    {
+        "key": "post_type_ff_services",
+        "title": "Services",
+        "menu_order": 0,
+        "active": true,
+        "post_type": "services",
+        "advanced_configuration": true,
+        "import_source": "",
+        "import_date": "",
+        "allow_ai_access": false,
+        "ai_description": "",
+        "labels": {
+            "name": "Services",
+            "singular_name": "Service",
+            "menu_name": "Services"
+        },
+        "description": "",
+        "public": true,
+        "hierarchical": true,
+        "exclude_from_search": false,
+        "publicly_queryable": true,
+        "show_ui": true,
+        "show_in_menu": true,
+        "admin_menu_parent": "",
+        "show_in_admin_bar": true,
+        "show_in_nav_menus": true,
+        "show_in_rest": true,
+        "rest_base": "",
+        "rest_namespace": "wp/v2",
+        "rest_controller_class": "WP_REST_Posts_Controller",
+        "menu_position": 21,
+        "menu_icon": {
+            "type": "dashicons",
+            "value": "dashicons-hammer"
+        },
+        "rename_capabilities": false,
+        "singular_capability_name": "post",
+        "plural_capability_name": "posts",
+        "supports": [
+            "title",
+            "editor",
+            "thumbnail",
+            "excerpt",
+            "page-attributes",
+            "custom-fields",
+            "revisions"
+        ],
+        "taxonomies": [
+            "category"
+        ],
+        "has_archive": false,
+        "has_archive_slug": "",
+        "rewrite": {
+            "permalink_rewrite": "post_type_key",
+            "slug": "",
+            "with_front": false,
+            "feeds": false,
+            "pages": true
+        },
+        "query_var": "post_type_key",
+        "query_var_name": "",
+        "can_export": true,
+        "delete_with_user": false,
+        "register_meta_box_cb": "",
+        "enter_title_here": ""
+    },
+    {
+        "key": "post_type_ff_solutions",
+        "title": "Solutions",
+        "menu_order": 0,
+        "active": true,
+        "post_type": "solutions",
+        "advanced_configuration": true,
+        "import_source": "",
+        "import_date": "",
+        "allow_ai_access": false,
+        "ai_description": "",
+        "labels": {
+            "name": "Solutions",
+            "singular_name": "Solution",
+            "menu_name": "Solutions"
+        },
+        "description": "",
+        "public": true,
+        "hierarchical": true,
+        "exclude_from_search": false,
+        "publicly_queryable": true,
+        "show_ui": true,
+        "show_in_menu": true,
+        "admin_menu_parent": "",
+        "show_in_admin_bar": true,
+        "show_in_nav_menus": true,
+        "show_in_rest": true,
+        "rest_base": "",
+        "rest_namespace": "wp/v2",
+        "rest_controller_class": "WP_REST_Posts_Controller",
+        "menu_position": 21,
+        "menu_icon": {
+            "type": "dashicons",
+            "value": "dashicons-building"
+        },
+        "rename_capabilities": false,
+        "singular_capability_name": "post",
+        "plural_capability_name": "posts",
+        "supports": [
+            "title",
+            "editor",
+            "thumbnail",
+            "excerpt",
+            "page-attributes",
+            "custom-fields",
+            "revisions"
+        ],
+        "taxonomies": [
+            "category",
+            "post_tag"
+        ],
+        "has_archive": false,
+        "has_archive_slug": "",
+        "rewrite": {
+            "permalink_rewrite": "post_type_key",
+            "slug": "",
+            "with_front": false,
+            "feeds": false,
+            "pages": true
+        },
+        "query_var": "post_type_key",
+        "query_var_name": "",
+        "can_export": true,
+        "delete_with_user": false,
+        "register_meta_box_cb": "",
+        "enter_title_here": ""
+    },
+    {
+        "key": "taxonomy_ff_product_type",
+        "title": "Product Types",
+        "menu_order": 0,
+        "active": true,
+        "taxonomy": "product_type",
+        "object_type": [
+            "product"
+        ],
+        "advanced_configuration": true,
+        "import_source": "",
+        "import_date": "",
+        "labels": {
+            "name": "Product Types",
+            "singular_name": "Product Type",
+            "menu_name": "Product Types",
+            "all_items": "All Product Types",
+            "edit_item": "Edit Product Type",
+            "view_item": "View Product Type",
+            "update_item": "Update Product Type",
+            "add_new_item": "Add New Product Type",
+            "new_item_name": "New Product Type Name",
+            "parent_item": "Parent Product Type",
+            "parent_item_colon": "Parent Product Type:",
+            "search_items": "Search Product Types",
+            "not_found": "No product types found",
+            "back_to_items": "← Go to product types",
+            "item_link": "Product Type Link",
+            "item_link_description": "A link to a product type"
+        },
+        "description": "",
+        "capabilities": {
+            "manage_terms": "manage_categories",
+            "edit_terms": "manage_categories",
+            "delete_terms": "manage_categories",
+            "assign_terms": "edit_posts"
+        },
+        "public": true,
+        "publicly_queryable": true,
+        "hierarchical": true,
+        "show_ui": true,
+        "show_in_menu": true,
+        "show_in_nav_menus": true,
+        "show_in_rest": true,
+        "rest_base": "",
+        "rest_namespace": "wp/v2",
+        "rest_controller_class": "WP_REST_Terms_Controller",
+        "show_tagcloud": true,
+        "show_in_quick_edit": true,
+        "show_admin_column": true,
+        "rewrite": {
+            "permalink_rewrite": "taxonomy_key",
+            "slug": "",
+            "with_front": false,
+            "rewrite_hierarchical": false
+        },
+        "query_var": "taxonomy_key",
+        "query_var_name": "",
+        "default_term": {
+            "default_term_enabled": false,
+            "default_term_name": "",
+            "default_term_slug": "",
+            "default_term_description": ""
+        },
+        "sort": null,
+        "meta_box": "default",
+        "meta_box_cb": "",
+        "meta_box_sanitize_cb": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    }
+]

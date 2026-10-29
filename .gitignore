@@ -1,0 +1,45 @@
+# Facility Flooring — wp-content repository
+#
+# This repo tracks only the custom code written for this site plus project docs.
+# Everything else (WordPress core, third-party plugins and themes, uploads, caches,
+# backups) is either installed from its vendor or lives in the database / media
+# library and is moved between environments with a migration tool. See README.md.
+#
+# Pattern: ignore everything at the root, then allow-list what we own.
+
+/*
+
+# Project files
+!/.gitignore
+!/.gitattributes
+!/.editorconfig
+!/README.md
+!/CHANGELOG.md
+!/LICENSE
+!/docs/
+
+# Must-use plugins: only our own ff-*.php files, never throwaway ff-tmp-* scripts
+!/mu-plugins/
+/mu-plugins/*
+!/mu-plugins/ff-*.php
+/mu-plugins/ff-tmp-*
+
+# Child theme only (parent Hello Elementor is installed from wordpress.org)
+!/themes/
+/themes/*
+!/themes/Facility-Flooring/
+
+# Never commit, wherever they appear
+*.log
+*.sql
+*.sql.gz
+*.wpress
+*.zip
+.env
+.env.*
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+node_modules/
