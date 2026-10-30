@@ -2,8 +2,8 @@
 
 Code and content are moved separately:
 
-- **Code** (this repo): deploy only `mu-plugins/ff-*.php` and `themes/Facility-Flooring/`. Do not deploy `docs/` or the project files to the web root.
-- **Content** (database + uploads): move it once, at launch, with a migration tool, and replace `http://sandbox.local` with the live domain. After launch, never overwrite the production database.
+- **Child theme** (this repo): deploy only `themes/Facility-Flooring/`. Do not deploy `docs/` or the project files to the web root.
+- **Everything else** (database + uploads): move it once, at launch, with a migration tool, and replace `http://sandbox.local` with the live domain. This includes the custom code, which is stored in the WPCode plugin. After launch, never overwrite the production database.
 
 ## Before
 
@@ -13,7 +13,9 @@ Code and content are moved separately:
 
 ## Go live
 
-- [ ] Migrate the database and uploads, and deploy the code.
+- [ ] Migrate the database and uploads, and deploy the child theme.
+- [ ] Check that WPCode is active and all the "FF: …" snippets are active under Code Snippets.
+- [ ] Activate Redirection. It is installed but inactive on the sandbox.
 - [ ] In `wp-config.php`, set `WP_ENVIRONMENT_TYPE` to `production` and `WP_DEBUG` to `false`.
 - [ ] Set up SMTP so the forms send real email.
 - [ ] Import the Redirection rules and test some old URLs.

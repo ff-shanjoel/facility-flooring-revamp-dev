@@ -5,14 +5,14 @@ flowchart LR
     A[Visitor] --> B[WordPress]
     B --> C[Elementor Theme Builder<br/>header, footer, layouts]
     B --> D[ACF<br/>products, services, solutions]
-    B --> E[mu-plugins<br/>spec tables, grids, spam check]
+    B --> E[WPCode snippets<br/>spec tables, grids, spam check]
     B --> F[Complianz]
     F -->|after consent| G[Google Tag Manager]
 ```
 
 ## Where things are managed
 
-Almost everything is set in the dashboard. Only the last row of this table is code.
+Everything is set in the dashboard. Custom code is the last row of this table, and it is edited there too.
 
 | What | Where |
 |---|---|
@@ -26,7 +26,7 @@ Almost everything is set in the dashboard. Only the last row of this table is co
 | SEO titles, descriptions, sitemaps | Yoast SEO |
 | Cookie banner and Google Tag Manager | Complianz |
 | Redirects | Tools → Redirection |
-| Spec tables, product grids, breadcrumbs, placeholder image, spam checks | `mu-plugins/ff-content-model.php` |
+| Spec tables, product grids, breadcrumbs, placeholder image, spam checks | Code Snippets (WPCode), snippets named "FF: …" |
 
 The admin **Site Guide** page shows this same map, plus live status checks.
 
@@ -72,4 +72,4 @@ Other pages (Home, Contact, FAQ, the hub pages and the form pages) have their ow
 - **Modifier classes must sit above their base class.** In Elementor's class list, modifiers such as `ff-btn-primary` have to come before the base class (`ff-btn`), or they won't take effect.
 - **Fonts** are served locally, so the site makes no requests to Google Fonts.
 - **Construction Joints is noindex on purpose.** The page is set to noindex to match the live site.
-- **Hub URLs are hard-coded in the breadcrumbs.** If you rename the hub pages (`/products/`, `/services/`, `/solutions/`, `/recent-work/`), update the URLs in `[ff_breadcrumbs]`.
+- **Hub URLs are hard-coded in the breadcrumbs.** If you rename the hub pages (`/products/`, `/services/`, `/solutions/`, `/recent-work/`), update the URLs in the "FF: Breadcrumbs" snippet.

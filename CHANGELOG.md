@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- All custom PHP, CSS and JavaScript moved from `mu-plugins/` into WPCode snippets ("FF: …"). The `mu-plugins` folder is gone.
+- Site Guide now links to each snippet and warns if one is inactive.
+- Added `docs/exports/wpcode-snippets.json` as a backup of the snippets.
+
 ## 1.0.0 — 2026-10-29
 
 This is the first version of the revamp, running on the sandbox.
