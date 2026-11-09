@@ -162,7 +162,7 @@
         "insert_number": 1,
         "code_type": "php",
         "priority": 10,
-        "active": true
+        "active": false
     },
     {
         "id": 6576,
