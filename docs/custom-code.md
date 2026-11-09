@@ -17,10 +17,13 @@ WPCode must stay active. If it is deactivated, everything below stops, including
 | FF: Block Styles | CSS | Site-wide header | Styles for the blocks above. Update it if the brand colours change. |
 | FF: Resources Filter | JS | Site-wide footer | The search box and tabs on the Resources page. It does nothing on other pages. |
 | FF: Site Guide Menu Style | CSS | Admin header | The teal Site Guide bar in the admin menu. |
+| FF: Form Auto-Replies and Redirects | PHP | Everywhere | Like the live forms: the Project Enquiry form sends the visitor a thank-you email, and the slip test form goes to /thank-you-slip-test/ after sending. Forms are matched by their Form name. |
+| FF: Newsletter (Mailchimp) | PHP | Everywhere | Adds a `mailchimp` action used by the footer newsletter form: subscribes the visitor to the live audience (The Flooring Supply Centre) with double opt-in. Needs Mailchimp for WP connected with the API key. |
+| FF: Search Titles Only | PHP | Everywhere | Like live: the front-end search matches titles only. |
 
 ## Form spam protection
 
-There are four Elementor forms: Contact, Construction Joints, Slip Testing and Project Enquiry. Protection works without a captcha.
+There are four enquiry forms (Contact, Construction Joints, Slip Testing, Project Enquiry) and the newsletter form in the footer. Recipients, CC and BCC match the live site; change them in each form's Email settings in Elementor. Protection works without a captcha.
 
 Each form contains a hidden **Spam Trap** block with two fields:
 

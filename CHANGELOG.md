@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Go-live prep matching live: Redirection active with the live rule; Yoast social profiles; form recipients, Project Enquiry auto-reply and slip-test redirect as live; footer newsletter (Mailchimp, needs API key); title-only search; FluentSMTP, UpdraftPlus and WP-Optimize installed inactive.
 - All custom PHP, CSS and JavaScript moved from `mu-plugins/` into WPCode snippets ("FF: …"). The `mu-plugins` folder is gone.
 - Site Guide now links to each snippet and warns if one is inactive.
 - Added `docs/exports/wpcode-snippets.json` as a backup of the snippets.
