@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Launch checklist: added the local-fonts fix needed after moving the site (found on the FF test server).
 - Footer newsletter form removed again (live shows none); the Mailchimp snippet and plugin are kept inactive.
 - Go-live prep matching live: Redirection active with the live rule; Yoast social profiles; form recipients, Project Enquiry auto-reply and slip-test redirect as live; title-only search; FluentSMTP, UpdraftPlus and WP-Optimize installed inactive.
 - All custom PHP, CSS and JavaScript moved from `mu-plugins/` into WPCode snippets ("FF: …"). The `mu-plugins` folder is gone.

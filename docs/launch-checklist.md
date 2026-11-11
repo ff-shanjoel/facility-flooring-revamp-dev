@@ -14,6 +14,7 @@ Code and content are moved separately:
 ## Go live
 
 - [ ] Migrate the database and uploads, and deploy the child theme.
+- [ ] Fix the local fonts. Elementor's font stylesheets keep the old local address, and some migration tools skip the font files. In `wp_options`, delete the row `_elementor_local_google_fonts`, delete `wp-content/uploads/elementor/google-fonts/`, then run Elementor → Tools → Regenerate CSS & Data, purge the cache and load a page. Elementor re-downloads the fonts with the new address.
 - [ ] Check that WPCode is active and all the "FF: …" snippets are active under Code Snippets.
 - [ ] Activate Redirection. It is installed but inactive on the sandbox.
 - [ ] In `wp-config.php`, set `WP_ENVIRONMENT_TYPE` to `production` and `WP_DEBUG` to `false`.
